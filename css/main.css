@@ -1,0 +1,429 @@
+/* Color Codes:
+    B2E9EC: Celeste (light blue) => 96ceb4
+    050517: Rich Black
+    007CBE: Honolulu Blue => 88d8b0
+    FFE9D5: Antique White (Sandy color) => ffeead
+    1A1B41: Space Cadet (navy-esque)
+    ff6f69 (coral pink)
+    ffcc5c: Sunshine Yellow   
+*/
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p, a {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+/* General */
+.container {
+    font-family: 'Knewave', cursive;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffcc5c;
+    width: 100%;
+}
+
+.socials {
+    display: none;
+    list-style-type: none;
+}
+
+.socials .social-btn a img{
+    width: 65px;
+    height: 65px;
+    object-fit: none;
+}
+
+#fb {
+    object-position: 2.4% 19%;
+}
+
+#ig {
+    object-position: 97.5% 19%;
+}
+
+#yt {
+    object-position: 27% 19%;
+}
+
+#logo {
+    display: block;
+    margin: 1em auto 1em 1em;
+}
+
+#login {
+    display: none;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 14pt;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+#login a:hover {
+    text-shadow:0 0#050517;
+}
+
+
+
+
+/* Hamburger Menu */
+#hamburger {
+    display: none;
+}
+
+#ham-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 1.75em;
+    z-index: 1000;
+}
+
+#ham-btn img {
+    transform: translateY(6px)
+}
+
+nav {
+    width: 0;
+}
+
+nav ul {
+    position: absolute;
+    list-style-type: none;
+    background-image: linear-gradient(to right, #ff6f69 10%, #ffcc5c);
+    padding-top: 10em;
+    margin-top: -15em;
+    text-align: right;
+    right: 0px;
+    width: 15em;
+    height: 100em;
+    max-width: 0;
+    overflow: hidden;
+    transition: .8s ease; 
+}
+
+#hamburger:checked ~ nav ul {
+    max-width: 15em;
+    padding-right: 1.5em;
+}
+
+nav ul li {
+    margin: 1.5em 0;     
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #050517;
+    font-size: 1.5em;
+    padding: .5em .3em .5em 5em;    
+}
+
+.login-sub {
+    font-size: .75em;
+}
+
+.login-sub a {
+    min-width: 5em;
+}
+/**/
+
+/* Hero Banner */
+#hero {
+    background-image: url(../images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: 375%;
+    background-position: center;
+    max-height: 1024px;
+    margin-top: -1.5em;
+}
+
+#hero h1 {
+    text-align: center;
+    padding-top: 1.7em;
+    font-size: 3.5em;
+    width: 80%;
+    margin: 0 auto;
+    color: #262972;
+}
+
+#hero ul li {
+    list-style-type: none;
+}
+
+.cta-btn {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    background-color:#1A1B41;
+    border: 5px solid #050517;
+    color: #fff;
+    width: 15em;
+    text-align: center;
+    padding: .6em;
+    margin: 1em auto;
+}
+
+.cta-btn:hover {
+    border-color: rgba(108, 108, 240, 0.3);
+    text-shadow: 1px 1px #888;
+}
+/**/
+
+/* Mission */
+
+#mission {
+    background-color:#96ceb4;
+    text-align: center;
+    padding-top: .5em;
+}
+
+#mission h3 {
+    font-size: 2em;
+    padding: .6em 0;
+    color: #007CBE;
+}
+
+#mission p {
+    margin: auto .5em;
+    font-size: 1.2em;
+    color: #050517;
+}
+/**/
+
+/* Events */
+
+#event-divider {
+    text-align: center;
+    margin-top: 1.5em; 
+    font-size: 15pt;
+    color: #007CBE;
+}
+
+
+#main-event {
+    background-color: #ffeead;
+}
+
+#main-event h3 {
+    font-size: 18pt;
+    text-align: center;
+    margin: 1em;
+}
+
+#main-event img {
+    display: block;
+    margin: 0 auto;
+}
+
+#main-event p {
+    margin: .5em 1em;
+}
+
+#main-event .cta-btn {
+    display: none;
+}
+/**/
+
+/* Extra Categories */
+#visit, #live {
+    display: none;
+}
+
+#newsletter {
+    background-image: url(../images/sunsetS.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+#newsletter h4 {
+    margin: 1em;
+    font-size: 1.4em;
+}
+
+#newsletter p {
+    margin: 0.5em;
+}
+#newsletter .cta-btn {
+    width: 10em;
+}
+/**/
+
+/* Footer */
+
+footer {
+    background-color: #B2E9EC;
+}
+
+footer .socials {
+    display: flex;
+    flex-flow: row;
+    margin: 1em;
+    list-style-type: none;
+}
+
+footer p {
+    margin-left: 2em;
+}
+
+
+/* Tablet Query */
+
+@media screen and (min-width: 530px) {
+    
+    .socials {
+        display: flex;
+        flex-flow: row;
+        margin: 1em;
+        list-style-type: none;
+    }
+
+    .socials li.social-btn {
+        width: 14%;
+    }
+
+    #hero {
+        background-size: 200%;
+    }
+    
+    #hero h1 {
+        font-size: 4.5em;
+    }
+    
+    #mission p {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    #event-divider {
+        margin-top: 1em; 
+        font-size: 20pt;
+    }
+    
+    #main-event img {
+        display: inline;
+        float: left;
+        margin: .5em 1em;
+        clear: both;
+    }
+
+    #main-event p {
+        font-size: 14pt;
+        text-align: right;
+    }
+
+    #main-event .cta-btn {
+        display: block;
+        margin: 7em auto;
+    }
+
+    #visit, #live {
+        display: none;
+    }
+    
+    #newsletter {
+        background-image: url(../images/sunsetM.jpg);
+    }
+}
+/**/
+
+/* Desktop Query */
+
+@media screen and (min-width: 900px) {
+
+    .socials li.social-btn {
+        width: 8%;
+    }
+
+    #logo {
+        margin: 2em auto 0;
+    }
+
+    #login {
+        display: inline-block;
+    }
+
+    .login-sub {
+        display: none;
+    }
+    
+    #hero {
+        background-size: 110%;
+    }
+
+    #hero h1 {
+        text-align: center;
+        padding-top: 3em;
+        font-size: 4.75em;
+        width: 80%;
+        margin: 1em auto 0.5em;
+    }
+
+    #hero ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+    #hero ul li {
+        margin: 0 1em;
+    }
+
+    #mission {
+        padding-top: 3em;
+    }
+
+    #mission h3 {
+        font-size: 30pt;
+    }
+
+    #main-event img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        border: 50px rgba(255,255,255,0.7) solid;
+    }
+
+    #main-event p {
+        width: 65%;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    #visit, #live {
+        display: grid;
+    }
+
+    #newsletter {
+        background-color:#88d8b0;
+        background-image: none;
+        color:#050517;
+    }
+
+}
