@@ -1,0 +1,29 @@
+@supports (grid-area: auto) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 8em 1.5fr repeat(2, 1fr);
+        grid-gap: 0;
+    }
+
+    #navbar {
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+
+    #hero {
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+
+    #main-event {
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+    
+    #footer {
+        grid-column: 1/13;
+        grid-row: 4/5;
+    }
+}

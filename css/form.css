@@ -1,0 +1,54 @@
+* {
+    font-family: 'Crimson Text', serif;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 1em 0 1em;
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+    border-bottom: 50px solid #ffcc5c;
+}
+
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 1em;
+}
+
+legend {
+    font-size: 2em;
+    text-align: center;
+    color: #007CBE;
+    margin: 1em 0;
+}
+
+input, select {
+    display: block;
+    margin: 1em 3em;
+    width: 15em;
+}
+
+label {
+    margin: 1em;
+}
+a {
+    text-decoration: none;
+}
+a input {
+    background-image: linear-gradient(to right, #ff6f69 10%, #ffcc5c);
+    color: #050517;
+    font-size: 1em;
+    width: 10em;
+    padding: 1em;
+    margin: 0 auto 2em;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #050517;
+    text-decoration: none;
+}
